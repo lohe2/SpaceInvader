@@ -10,7 +10,11 @@ document.addEventListener("keydown",(e)=>{
         startImage.style.visibility = 'hidden'
         animate()
     }
+    if (e.key == '0'){
+        biggestScore = 1000000000000000000
+    }
 })
+
 
 
 

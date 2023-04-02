@@ -1,0 +1,41 @@
+<head>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<style>
+    body{
+        margin: 0;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        background-color:black;
+    }
+</style>
+<body>
+    <div style = "position:relative;">
+        
+        <p style = "position:absolute;z-index:10;color:white;left:10px;top:10px;margin:0;font-family:sans-serif;font-size:14px;">
+            <span>Score</span>
+            <span id = "scoreEl">0</span>
+        </p>
+        <canvas id = "canvas1"></canvas>
+        <div id = "message" style = "position: absolute;width:200px;visibility: visible;">
+            <span  style = "color:white;text-align: center;">
+                <span style = "color:red">A + D</span> To Move <br>
+                <span style = "color:red">Space</span> To Shoot<br>
+                <span style = "color:red">Enter</span> To Start!
+            </span>
+        </div>
+        <image id = "introImage" src = "./img/Space invaders.png"></image>
+        <div id = "loseMessage"style = "position: absolute;width:1000px;visibility:hidden;text-align:center;">
+            <span id = "loseText" style ="color:red;text-align: center;" >
+                You lose
+            </span><br>
+            <span id = "Score"style = "color:white;">score</span><br>
+            <button id = "retryBtn">Retry</button>
+        </div>
+    </div>
+
+
+    <script src = "Script.js"></script>
+</body>
+    
